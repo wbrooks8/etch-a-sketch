@@ -2,25 +2,70 @@
 <html>
 <head>
 <style>
-    #container {
-        position: absolute;
+    body {
+        background: grey;
+    }
+
+    h1 {
+        font-size: 60px;
+        position: relative;
+        top: 2vh;
         margin: auto;
-        background-color: black;
-        width: 50px
+        width: 60%; 
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    #container {
+        position: relative;
+        top: 18vh;
+        margin: auto;
+        display: grid;
+        background-color: brown;
+        width: 600px;
+        height: 600px;
 
     }
 
+    .block {
+        background-color: blueviolet;
+        margin: 0px;
+        border-width: 0px;
+    }
+
+    #input {
+        position: relative;
+        margin: auto;
+        top: 15vh;
+        width: 60%;
+        text-align: center;
+    }
+
+
+    .block:hover {
+        background-color: green;
+        transition: 1s;
+    }
 
 </style>
 <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div id="container">
-        About
+    <h1>
+        Etch-A-Sketch
+    </h1>
+    <div id='input'>
+        <input type='text' id="count" placeholder="What size grid? '<' 100">
+        <input type='submit' id="submitC" onclick="grid()">
+    </div>
+    <div id='container'>
+    
     </div>
 
 
 
+    <script src="script.js">
 
+    </script>
 </body>
 </html>
