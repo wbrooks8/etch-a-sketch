@@ -4,7 +4,7 @@ function grid () {
     let b = document.getElementById("count").value;
     let c = b * b;
 
-            for (i=0; i < c; i++) {
+            for (i=0; i < c && b <+ 100; i++) {
 
             var block = document.createElement('div');
             block.className = "block";
