@@ -4,7 +4,7 @@ function grid () {
     let b = document.getElementById("count").value;
     let c = b * b;
 
-            for (i=0; i < c && b <+ 100; i++) {
+            for (i=0; i < c && b <= 100; i++) {
 
             var block = document.createElement('div');
             block.className = "block";
@@ -31,6 +31,19 @@ input.addEventListener("keyup", function(event) {
 });
 
 function resetContainer() {
+
+    var elements = document.getElementsByClassName("block");
+    while (elements.length > 0) {
+      elements[0].parentNode.removeChild(elements[0]);
+    }
+
+    var elements2 = document.getElementsByClassName("permahover");
+    while (elements2.length > 0) {
+      elements2[0].parentNode.removeChild(elements2[0]);
+    }
+  }
+
+  function resetContainer() {
 
     var elements = document.getElementsByClassName("block");
     while (elements.length > 0) {
